@@ -19,12 +19,12 @@
         <div class="jumbotron jumbotron-fluid">
             <div class="container">
                 <h1 class="display-4">New York Times Activity</h1>
-                <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+                
             </div>
         </div>
 
         <!-- SEARCH PARAMETERS BOX -->
-        <div class="card" style="width: 18rem;">
+        <div class="card" style="width: 50rem;">
             <div class="card-header">
                 Search Parameters
             </div>
@@ -32,13 +32,13 @@
             <form>
                 <!-- SEARCH TERM TEXT FIELD-->
                 <div class="form-group">
-                    <label for="searchTerm">Search Term</label>
+                    <label for="searchTerm">Search Term:</label>
                     <input type="text" class="form-control" id="searchTerm" placeholder="Search Term">
                 </div>
 
                 <!-- NUMBER OF RECORDS DROPDOWN -->
                 <div class="form-group">
-                    <label for="numberRecords">Number of Records to Retrieve</label>
+                    <label for="numberRecords">Number of Records to Retrieve:</label>
                     <select class="form-control" id="numberRecords">
                         <option>1</option>
                         <option>5</option>
@@ -49,40 +49,44 @@
 
                     <!-- START YEAR TEXT FIELD -->
                     <div class="form-group">
-                        <label for="startYear">Start Year (Optional)</label>
-                        <input type="text" class="form-control" id="startYear" placeholder="Search Term">
+                        <label for="startYear">Start Year (Optional):</label>
+                        <input type="text" class="form-control" id="startYear" placeholder="Start Year">
                     </div>
 
 
                     <!-- END YEAR TEXT FIELD-->
                     <div class="form-group">
-                        <label for="searchTerm">End Year (Optional)</label>
-                        <input type="text" class="form-control" id="endYear" placeholder="Search Term">
+                        <label for="searchTerm">End Year (Optional):</label>
+                        <input type="text" class="form-control" id="endYear" placeholder="End Year">
                     </div>
             </form>
 
 
-
+            <!-- SUBMIT BUTTON -->
             <button id="submit"> Submit </button>
+
+            <!-- CLEAR BUTTON-->
             <button id="clear"> Clear </button>
 
 
         </div>
 
         <div class="card" style="width: 18rem;">
-                <div class="card-header">
-                    Top Articles
-                </div>
-                
-                <div id="topArticles">
-                Test
-                </div>
-    
+            <div class="card-header">
+                Top Articles
             </div>
 
+            <div id="topArticles">
+                Test
+            </div>
 
-    <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-        crossorigin="anonymous"></script>
+        </div>
+
+    </div>
+
+        <!-- JAVASCRIPT LINKS-->
+        <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"></script>
         <script src="assets/javascript/app.js"></script>
 </body>
 

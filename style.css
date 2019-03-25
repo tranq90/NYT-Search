@@ -1,0 +1,23 @@
+.jumbotron {
+    background-color: #052344;
+    color: white;
+    text-align: center;
+    height: 180px;
+}
+.display-4 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;   
+}
+.card {
+    text-align: center;
+    width: 200px;
+margin: 0 auto;
+}
+.card-header {
+    background-color: #0c2e52;
+    color:white;
+    text-align: left;
+}
+.label {
+    text-align: left;
+
+}
