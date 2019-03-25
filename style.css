@@ -5,19 +5,24 @@
     height: 180px;
 }
 .display-4 {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;   
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
+    font-size: 65px;
+    
 }
 .card {
     text-align: center;
     width: 200px;
-margin: 0 auto;
+    margin: 0 auto;
 }
 .card-header {
     background-color: #0c2e52;
     color:white;
     text-align: left;
 }
-.label {
+.form-group {
     text-align: left;
-
+}
+#topArticles {
+    margin-bottom: 200px;
+    padding: 20px;
 }
