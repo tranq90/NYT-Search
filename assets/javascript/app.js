@@ -8,12 +8,9 @@ $("button").click(function (e) {
         method: "GET"
     }).then(function (response) {
         console.log(response);
-        var title = response.response.docs[i].headline.main;
-        var author = response.response.docs[i].byline.original;
-
-        
+    
         for (var i = 0; i < $("#numberRecords").val(); i++) {
-            $("#topArticles").text(response.response.docs[i].headline.main);  
+            $("#topArticles").append(response.response.docs[i].headline.main +"<p>"+response.response.docs[i].byline.original+"</p");  
         }
 
 
