@@ -1,11 +1,13 @@
-$.ajax({
+$("button").click(function (e) {
+    var search = $("#searchTerm").val();
+    e.preventDefault();
+    var queryURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json?q=" + search + "&api-key=9pElGwiXwurYGOMRNxb2KcjKFfcOEjm1"
 
-}).then(function(response){
-    var results = response.data;
-    console.log(results);
+    $.ajax({
+        url: queryURL,
+        method: "GET"
+    }).then(function (response) {
+        console.log(response);
 
-    for (var i = 0; i < results.length; i++){
-        var resultDiv = $("<div>");
-        var author = results[i];
-    }
+    })
 })
