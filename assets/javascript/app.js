@@ -9,10 +9,8 @@ $("button").click(function (e) {
     }).then(function (response) {
         console.log(response);
 
-        if ($("#startYear").text)
-
         for (var i = 0; i < $("#numberRecords").val(); i++) {
-            $("#topArticles").append(response.response.docs[i].headline.main +"<p>"+response.response.docs[i].byline.original+"</p");  
+            $("#topArticles").append(response.response.docs[i].headline.main + "<p>" + response.response.docs[i].byline.original + "</p");
         }
     })
 })
